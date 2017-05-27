@@ -2,12 +2,12 @@
 
 <%= form_for @user do |f| %>
   <%= f.label :username %>
-  <%= f.text_field :username %><br>
+  <%= f.text_field :username, placeholder: "johndoe" %><br>
   <%= f.label :email %>
-  <%= f.text_field :email %><br>
+  <%= f.text_field :email, value: "email@example.com", placeholder: "johndoe@company.com" %><br>
   <%= f.label :password %>
-  <%= f.password_field :password %><br>
+  <%= f.password_field :password, placeholder: "******" %><br>
   <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %><br>
+  <%= f.password_field :password_confirmation, placeholder: "******" %><br>
   <%= f.submit("Register") %>
  <% end %>
