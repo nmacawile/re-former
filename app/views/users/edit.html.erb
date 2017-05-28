@@ -1,4 +1,4 @@
-<h1>Register</h1>
+<h1>Edit User</h1>
 <div>
   <ul>
   <% @user.errors.full_messages.each do |error| %>
@@ -11,7 +11,7 @@
   <%= f.label :username %>
   <%= f.text_field :username, placeholder: "johndoe" %><br>
   <%= f.label :email %>
-  <%= f.text_field :email, value: "email@example.com", placeholder: "johndoe@company.com" %><br>
+  <%= f.text_field :email, placeholder: "johndoe@company.com" %><br>
   <%= f.label :password %>
   <%= f.password_field :password, placeholder: "******" %><br>
   <%= f.label :password_confirmation %>
